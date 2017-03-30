@@ -17,6 +17,7 @@ class Validator
 
 	public function data($method=null,$keys=null)
 	{
+		$response="";
 		foreach ($keys as $field) {
 
 			if ( (!isset($method[$field])) || empty($method[$field]) ) {
